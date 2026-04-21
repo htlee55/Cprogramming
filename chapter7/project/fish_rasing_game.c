@@ -50,7 +50,7 @@ int main(void)
 
 		// 사용자가 입력한 번호의 어항에 물 주기
 		// 조건 1. 어항의 물 높이가 0 이하면 물을 주지 않음
-		if (cursor[num - 1] <= 0) 
+		if (cursor[num - 1] <= 0) 		// arrayFish[num - 1] 접근과 같은 의미
 		{
 			printf("%d번 어항의 물고기는 이미 죽었으므로 물을 주지 않습니다.\n", num);
 		}
