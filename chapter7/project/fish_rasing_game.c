@@ -119,7 +119,7 @@ void decreaseWater(long elapsedTime)
 	for (int i = 0; i < 6; i++)
 	{
 		arrayFish[i] -= (level * 3 * (int)elapsedTime); // 증발하는 물의 양 계산, 레벨과 시간에 비례
-		if (arrayFish[i] < 0)
+		if (arrayFish[i] < 0)		// 값이 0아래로 내려가면 0으로 보정
 		{
 			arrayFish[i] = 0;
 		}
