@@ -7,7 +7,7 @@ int level;
 int arrayFish[6];
 int * cursor;
 
-// 함수 선언
+// 함수 프로토타입 선언
 void initData();
 void printfFishes();
 void decreaseWater(long elapsedTime);
@@ -23,7 +23,7 @@ int main(void)
 	initData(); // 게임 초기화 함수 호출
 
 	startTime = clock(); // 프로그램 실행 이후 현재까지 흐른 시간 저장
-	cursor = arrayFish; // 포인트 변수에 어항 배열의 시작 주소 넣기
+	cursor = arrayFish; // 포인트 변수에 어항 배열의 시작 주소 넣기, 배열의 이름 arrayFish = &arrayFish[0], cursor 포인터로 배열접근
 	
 	// 어항에 물 주기
 	while (1) 
